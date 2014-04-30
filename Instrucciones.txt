@@ -1,0 +1,126 @@
+--------------------------
+I N S T R U C C I O N E S 
+--------------------------
+
+1.- Configure el archivo de entrada "input.txt" que se encuantra en executable/mars-rovers/etc
+
+INPUT
+
+The first line of input is the upper-right coordinates of the plateau, the lower-left
+coordinates are assumed to be 0,0.
+
+The rest of the input is information pertaining to the rovers that have been deployed.
+
+Each rover has two lines of input. The first line gives the rover's position, and the
+second line is a series of instructions telling the rover how to explore the plateau.
+
+The position is made up of two integers and a letter separated by spaces,
+corresponding to the x and y coordinates and the rover's orientation.
+
+Each rover will be finished sequentially, which means that the second rover won't start
+to move until the first one has finished moving.
+
+
+Example
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+
+2.- Tener instalado JDK 1.6 o superior.
+	
+3.- Configure el archivo "run.bat" que se encuentra en executable/mars-rovers.
+@echo OFF
+cd D:\Dasarrollo\Documentos\micrium\mars-rovers\executable\mars-rovers //Directorio del archivo binario mars-rovers.jar
+java -jar mars-rovers.jar
+pause
+
+
+4.- Para ejecutar haga Click sobre "run.bat" que se encuentra en executable/mars-rovers.
+
+OUPUT
+
+The output for each rover should be its final coordinates and heading.
+
+Example
+1 3 N
+5 1 E
+
+Listo !!!!
+
+--------------------------
+E S T R U C T U R A
+--------------------------
+1.-code:Directorio del codigo fuente del aplicativo.
+
+2.-executable:Directorio del aplicativo binario que ejecuta la aplicacion.
+etc.-Directorio de configuracion de la applicación.
+logs.-Directorio de la bitacora de la aplicación.
+
+
+--------------------------
+C O N S I D E R A C I O N E S
+--------------------------
+1. El archivo de entradas puede tener leneas vacias al inicio, al final o al medio.
+
+INPUT
+
+5 5
+
+1 2 N
+LMLMLMLMM
+
+3 3 E
+MMRMMRMRRM
+
+OUPUT
+1 3 N
+5 1 E
+
+2.- Las lineas de informacion que esta formado por dos lineas, la primera es la posicion del rover y la segunda son las instrucciones.
+Estas dos lineas deben estar sin separacion de lineas blancas, si la linea de instrucciones es vacio el rover no realiza ningun movimiento.
+
+INPUT
+5 5
+1 2 N
+
+3 3 E
+MMRMMRMRRM
+
+OUPUT
+1 2 N
+5 1 E
+
+3.- La Orientacion(E,N,S,O) y las Instrucciones(L,R,M) del Rover pueden estar en minusculas.
+INPUT
+5 5
+1 2 N
+LmLMlMLMm
+3 3 e
+MmRMMrMRrM
+
+OUPUT
+1 2 N
+5 1 E
+
+--------------------------
+R E C O M E N D A C I O N E S
+--------------------------
+La aplicacione puede devolver los siguientes codigo de errores por validaciones relizadas.
+
+1.- "<01> Confguration input file is invalid." 		El archivo de entrada no se ha configurado adecuadamente.
+2.- "<02> Input information is empty."	      		No hay lineas de entrada de informacion de los rovers.
+3.- "<03> The number of rovers surpassed the plateau."  El numero de rovers ha sobreapsado la cantidad soportado por la meseta.	
+4.- "<04> Information is invalid."			Las lineas de entrada de información de un rover esta mal definido.
+5.- "<05> Rover's movement is invalid."			El movimiento del rover no es valido.
+
+NOTA
+No se ha controlando los movimientos que causan colicion entre rovers dendro de la meseta 
+devido que no esta especificado en el problema y presentan varios escenarios que alteran la salida del resultado.
+
+
+ 
+
+
+
