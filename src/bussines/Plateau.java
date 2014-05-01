@@ -6,6 +6,12 @@ import org.apache.commons.lang.StringUtils;
 
 import type.InstructionType;
 
+/**
+ * <pre>
+ * @author mario 
+ * Clase Plateau es la meseta rectangular en forma de un matriz donde los robost realizan la exploración.
+ * </pre>
+ */
 public class Plateau {
 
 	private Point coordinateUpperRight;
@@ -23,7 +29,7 @@ public class Plateau {
 	}
 
 	/**
-	 * Method that positions a rover based on the instructions.
+	 * Metodo que realiza los movimientos de los robost en base a las instrucciones para explorar.
 	 * 
 	 * @param rover
 	 * @param instructions

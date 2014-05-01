@@ -1,3 +1,3 @@
 @echo OFF
-java -jar mars-rovers.jar
+java -jar mars-rovers-solution.jar
 pause

@@ -14,7 +14,8 @@ import utils.ReadFileUtils;
 /**
  * <pre>
  * @author mario
- * Class that reads the input file.
+ * 
+ * Clase InputFile realiza la lectura e interpretacion de las lineas de entradas en el archivo input.txt.
  * </pre>
  */
 public class InputFile {
@@ -31,12 +32,12 @@ public class InputFile {
 	}
 
 	/**
-	 * Method that reads the input file.
+	 * Metodo que lee las lineas de entradas en el archivo input.txt.
 	 * 
 	 * @return true/false.
 	 */
 	public boolean readInput() {
-		log.info("It will read the input file.");
+		log.info("Se va leer las lineas de entradas del archivo input.txt.");
 
 		ReadFileUtils rfu = null;
 		try {
@@ -44,6 +45,8 @@ public class InputFile {
 			String line;
 			int lineCount = 0;
 			String location = StringUtils.EMPTY;
+
+			log.info("============INPUT===============");
 			while ((line = rfu.readLine()) != null) {
 				log.info("line " + lineCount + ":" + line);
 
@@ -54,7 +57,7 @@ public class InputFile {
 
 					coordinate = getCoordinate(line);
 					if (coordinate == null) {
-						log.error("Cordinate is invalid.");
+						log.error("La primera linea de entrada de coordenadas no es valido.");
 						return false;
 					}
 				} else {
@@ -70,9 +73,12 @@ public class InputFile {
 
 				lineCount++;
 			}
+			log.info("================================");
 
+			log.info("se ha leido las lineas de entradas del archivo input.txt satisfactoriamente.");
+			return true;
 		} catch (Exception e) {
-			log.error("Error while trying to read input file.", e);
+			log.error("Error al intentar leer las lineas de entradas del archivo input.txt", e);
 			return false;
 		} finally {
 			if (rfu != null) {
@@ -80,8 +86,6 @@ public class InputFile {
 			}
 		}
 
-		log.info("It has successfully read the input file.");
-		return true;
 	}
 
 	public Information getInformation(String location, String instructions) {

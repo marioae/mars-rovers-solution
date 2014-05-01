@@ -2,9 +2,8 @@
 I N S T R U C C I O N E S 
 --------------------------
 
-1.- Configure el archivo de entrada "input.txt" que se encuantra en /etc
-
-INPUT
+1.- Configure el archivo de entrada "input.txt" que se encuantra en el directorio build/etc generado con Ant 
+o directamente en el directorio etc en caso realize la ejecucion desde el codigo fuente.
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left
 coordinates are assumed to be 0,0.
@@ -30,9 +29,8 @@ MMRMMRMRRM
 
 2.- Tener instalado JDK 1.6 o superior.
 	
-3.- Para ejecutar haga Click sobre "run.bat" que se encuentra dentro del build o ejecutar con con ant y el target run.
-
-OUPUT
+3.- Para ejecutar haga Click sobre "run.bat" que se encuentra dentro del directorio build generado con Ant 
+o en otro caso ejecutar desde el codigo fuente con Ant y el target run.
 
 The output for each rover should be its final coordinates and heading.
 
@@ -45,11 +43,16 @@ Listo !!!!
 --------------------------
 E S T R U C T U R A
 --------------------------
-1.-code:Directorio del codigo fuente del aplicativo.
+1.-Directorio del codigo fuente del aplicativo.
+etc.-Directorio de configuracion de la applicacion.
+logs.-Directorio de la bitacora de la aplicacion.
+lib.- Librerias utilitarias para la aplicacion.
+build.-Directorio generado que contiene los archivos de ejecucion.
 
-2.-executable:Directorio del aplicativo binario que ejecuta la aplicacion.
-etc.-Directorio de configuracion de la applicación.
-logs.-Directorio de la bitacora de la aplicación.
+2.-Directorio build del aplicativo binario que ejecuta la aplicacion.
+etc.-Directorio de configuracion de la applicacion.
+logs.-Directorio de la bitacora de la aplicacion.
+lib.- Librerias utilitarias para la aplicacion.
 
 
 --------------------------
@@ -105,7 +108,7 @@ La aplicacione puede devolver los siguientes codigo de errores por validaciones 
 1.- "<01> Confguration input file is invalid." 		El archivo de entrada no se ha configurado adecuadamente.
 2.- "<02> Input information is empty."	      		No hay lineas de entrada de informacion de los rovers.
 3.- "<03> The number of rovers surpassed the plateau."  El numero de rovers ha sobreapsado la cantidad soportado por la meseta.	
-4.- "<04> Information is invalid."			Las lineas de entrada de información de un rover esta mal definido.
+4.- "<04> Information is invalid."			Las lineas de entrada de informaciï¿½n de un rover esta mal definido.
 5.- "<05> Rover's movement is invalid."			El movimiento del rover no es valido.
 
 NOTA

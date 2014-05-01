@@ -6,9 +6,11 @@ import type.CardinalPointType;
 import type.InstructionType;
 
 /**
+ * <pre>
  * @author mario
  * 
- * 
+ * Clase Rober que representa un obteto Robot.
+ * </pre>
  */
 public class Rover {
 

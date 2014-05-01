@@ -1,6 +1,6 @@
-<project name="cursosJava" default="run" basedir=".">
+<project name="mars-rovers-solution" default="run" basedir=".">
 
-	<property name="project.name" value="mars-rovers" />
+	<property name="project.name" value="mars-rovers-solution" />
 	<property name="class.dir" value="${basedir}\bin" />
 	<property name="jar.dir" value="${basedir}\build" />
 	<property name="src.dir" value="${basedir}\src" />
