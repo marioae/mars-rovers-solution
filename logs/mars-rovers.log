@@ -1,0 +1,30 @@
+2014-04-30 20:20:26 INFO  [Squad:?] [exploreMars] It will process the location of the rovers.
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] It will read the input file.
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] line 0:5 5
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] line 1:1 2 N
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] line 2:LMLMLMLMM
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] line 3:3 3 E
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] line 4:MMRMMRMRRM
+2014-04-30 20:20:26 INFO  [InputFile:?] [readInput] It has successfully read the input file.
+2014-04-30 20:20:26 INFO  [Squad:?] [moveRovers] It will process the location of the rovers.
+2014-04-30 20:20:26 INFO  [Squad:?] [moveRovers] The location of the rovers has ended.
+2014-04-30 20:32:43 INFO  [Squad:?] [exploreMars] It will process the location of the rovers.
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] It will read the input file.
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] line 0:5 5
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] line 1:1 2 N
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] line 2:LMLMLMLMM
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] line 3:3 3 E
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] line 4:MMRMMRMRRM
+2014-04-30 20:32:43 INFO  [InputFile:?] [readInput] It has successfully read the input file.
+2014-04-30 20:32:43 INFO  [Squad:?] [moveRovers] It will process the location of the rovers.
+2014-04-30 20:32:43 INFO  [Squad:?] [moveRovers] The location of the rovers has ended.
+2014-04-30 20:35:58 INFO  [Squad:?] [exploreMars] It will process the location of the rovers.
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] It will read the input file.
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] line 0:5 5
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] line 1:1 2 N
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] line 2:LMLMLMLMM
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] line 3:3 3 E
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] line 4:MMRMMRMRRM
+2014-04-30 20:35:58 INFO  [InputFile:?] [readInput] It has successfully read the input file.
+2014-04-30 20:35:58 INFO  [Squad:?] [moveRovers] It will process the location of the rovers.
+2014-04-30 20:35:58 INFO  [Squad:?] [moveRovers] The location of the rovers has ended.

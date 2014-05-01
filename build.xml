@@ -1,0 +1,83 @@
+<project name="cursosJava" default="run" basedir=".">
+
+	<property name="project.name" value="mars-rovers" />
+	<property name="class.dir" value="${basedir}\bin" />
+	<property name="jar.dir" value="${basedir}\build" />
+	<property name="src.dir" value="${basedir}\src" />
+	<property name="lib.dir" value="${basedir}\lib" />
+
+	<path id="classpath.jar">
+		<fileset dir="${lib.dir}" includes="*.jar" />
+	</path>
+
+	<path id="run.classpath">
+		<pathelement location="${jar.dir}\${project.name}.jar" />
+	</path>
+
+	<pathconvert property="manifest.classpath" pathsep=" ">
+		<path refid="classpath.jar" />
+
+		<mapper>
+			<chainedmapper>
+				<flattenmapper />
+				<globmapper from="*.jar" to="lib/*.jar" />
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+	
+	<target name="clean" description="clean up">
+		<delete dir="${class.dir}" />
+		<delete dir="${jar.dir}" />
+	</target>
+
+	<target name="doc" description="Crea documento">
+		<delete dir="${class.dir}\doc" />
+		
+		<javadoc sourcepath="${src.dir}" destdir="${class.dir}\doc" author="true" version="true" classpathref="classpath.jar"
+			use="true" windowtitle="Curso de programacion API" doctitle="&lt;h1&gt;${project.name}&lt;/h1&gt;">
+		</javadoc>
+	</target>
+
+	<target name="compile" depends="clean,copiarArchivo" description="Crea los Class">
+		<mkdir dir="${class.dir}" />
+		<mkdir dir="${jar.dir}" />
+		<javac classpathref="classpath.jar" srcdir="${src.dir}" destdir="${class.dir}" />
+	</target>
+
+	<target name="copiarArchivo" description="Copiar archivos">
+
+		<copy id="copy.jar" todir="${jar.dir}\lib" overwrite="true">
+			<path refid="classpath.jar" />
+		</copy>
+		
+		<copy id="etc" todir="${jar.dir}\etc" overwrite="true">
+			<fileset dir="${basedir}\etc" includes="*.*" />
+		</copy>
+		
+		<copy id="etc" todir="${jar.dir}" overwrite="true">
+			<fileset dir="${basedir}\" includes="*.bat" />
+		</copy>
+	</target>
+
+	<target name="createJar" depends="compile" description="Create Jar">
+		<jar destfile="${jar.dir}\${project.name}.jar" basedir="${class.dir}">
+
+			<!-- define MANIFEST.MF -->
+			<manifest>
+				<attribute name="Title" value="Problema Mars Rovers" />
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Development-By" value="Mario Alegre Espinoza" />
+				<attribute name="Version" value="1.1.1" />
+				<attribute name="Main-Class" value="Main" />
+				<attribute name="Class-Path" value="${manifest.classpath}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="run" depends="createJar" description="Ejecutar">
+		<java fork="true" classname="Main">
+			<classpath refid="run.classpath" />
+		</java>
+	</target>
+
+</project>
