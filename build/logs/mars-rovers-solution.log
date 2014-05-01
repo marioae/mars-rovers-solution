@@ -1,0 +1,18 @@
+2014-05-01 14:04:36 INFO  [Squad:?] [exploreMars] --------------- Se va iniciar la exploración de Martes. -------------------
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] Se va leer las lineas de entradas del archivo input.txt.
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] ============INPUT===============
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] line 0:5 5
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] line 1:1 2 N
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] line 2:LMLMLMLMM
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] line 3:3 3 E
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] line 4:MMRMMRMRRM
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] ================================
+2014-05-01 14:04:36 INFO  [InputFile:?] [readInput] se ha leido las lineas de entradas del archivo input.txt satisfactoriamente.
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] Se va realizar los movimientos de los robots en la meseta.
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] =============OUPUT==============
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] 1 3 N
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] 5 1 E
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] ================================
+2014-05-01 14:04:36 INFO  [Squad:?] [moveRovers] Se ha realizado los movimientos de los robots en la meseta satisfactoriamente.
+2014-05-01 14:04:36 INFO  [Squad:?] [exploreMars] Se ha realizado la exploración de Martes satisfactoriamente.
+2014-05-01 14:04:36 INFO  [Squad:?] [exploreMars] --------------- Se finalizo la exploración de Martes. -------------------
