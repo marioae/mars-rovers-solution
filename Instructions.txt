@@ -19,7 +19,6 @@ corresponding to the x and y coordinates and the rover's orientation.
 Each rover will be finished sequentially, which means that the second rover won't start
 to move until the first one has finished moving.
 
-
 Example
 5 5
 1 2 N
