@@ -2,7 +2,7 @@
 I N S T R U C C I O N E S 
 --------------------------
 
-1.- Configure el archivo de entrada "input.txt" que se encuantra en executable/mars-rovers/etc
+1.- Configure el archivo de entrada "input.txt" que se encuantra en /etc
 
 INPUT
 
@@ -30,14 +30,7 @@ MMRMMRMRRM
 
 2.- Tener instalado JDK 1.6 o superior.
 	
-3.- Configure el archivo "run.bat" que se encuentra en executable/mars-rovers.
-@echo OFF
-cd D:\Dasarrollo\Documentos\micrium\mars-rovers\executable\mars-rovers //Directorio del archivo binario mars-rovers.jar
-java -jar mars-rovers.jar
-pause
-
-
-4.- Para ejecutar haga Click sobre "run.bat" que se encuentra en executable/mars-rovers.
+3.- Para ejecutar haga Click sobre "run.bat" que se encuentra dentro del build o ejecutar con con ant y el target run.
 
 OUPUT
 
